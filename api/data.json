@@ -1,0 +1,15 @@
+{
+  "Products": [
+    {
+      "id": "98d0",
+      "productName": "T-Shirt",
+      "productPrice": "600",
+      "category": "electronics",
+      "brand": "apple",
+      "stock": "60",
+      "photo": "https://res.cloudinary.com/webcoder-minhaj/image/upload/v1737233221/u5umzpsrff7h1s8teajn.jpg"
+    }
+  ],
+  "Brand": [],
+  "Category": []
+}
