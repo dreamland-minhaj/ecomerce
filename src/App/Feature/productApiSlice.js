@@ -22,7 +22,7 @@ export const getAllProduct = createAsyncThunk("product/getAllProduct", async()=>
  export const deleteProduct = createAsyncThunk("product/deleteProduct", async(id)=>{
    try {
     const response = await axiosInstance.delete(`products/${id}`);
-    return response.data;
+    return response.data.id;
    } catch (error) {
       throw new Error(error.message);
    }

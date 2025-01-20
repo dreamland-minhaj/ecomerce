@@ -110,7 +110,6 @@ const Products = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         dispatch(deleteProduct(id));
-        dispatch(getAllProduct());
         Swal.fire({
           title: "Deleted!",
           text: "Your file has been deleted.",
