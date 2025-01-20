@@ -98,11 +98,6 @@ const Products = () => {
     dispatch(updateModalClose());
   };
 
-  // Fetch all products
-  useEffect(() => {
-    dispatch(getAllProduct());
-  }, [dispatch]);
-
   const handelProductDelete = (id) => {
     Swal.fire({
       title: "Are you sure?",
@@ -123,6 +118,11 @@ const Products = () => {
       }
     });
   }
+
+    // Fetch all products
+    useEffect(() => {
+      dispatch(getAllProduct());
+    }, [dispatch]);
 
   return (
     <>
